@@ -1,12 +1,9 @@
 // Assignment code here
-// Arrays:
-var number = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
-var special = ["!", "@", "#", "$", "%", "^", "&", "*", "/", ">", "?", "<", "-", "=", "+", "~"];
-var lowerAlpha = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
-var upperAlpha = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
-
-// realized I need to assign the parameters variable before the function
-parameters = [];
+// variables:
+var number = '1234567890';
+var special = ['!@#$%^&*<>?/'];
+var lowerAlpha = 'abcdefghijklmnopqrstuvwxyz';
+var upperAlpha = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
 // Input Variables
 var confirmLength;
@@ -25,11 +22,9 @@ function generatePassword() {
     }
     else {
         window.alert("Your password will be " + confirmLength + " characters long.");
-        // ran into an issue where password generated was only 1 character long. realized that confirmLength is a string and needs to be converted to an integer figured this out from W3schools
-        // confirmLength = parseInt(confirmLength)
         parameterConfirm();
     }
-
+    // nested another function inside of this one for the parameter selection
     function parameterConfirm() {
         confirmLowerAlpha = window.confirm("Would you like to include lowercase letters?");
         confirmUpperAlpha = window.confirm("Would you like to include capital letters?");
@@ -96,7 +91,7 @@ function generatePassword() {
 
 
     // creating empty password variable to store the generated password in
-    var password = [];
+    var password = '';
 
     // this will select random values from the arrays selected
     for (var i = 0; i < confirmLength; i++) {
