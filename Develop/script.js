@@ -91,6 +91,7 @@ function generatePassword() {
             parameters = special
         }
         console.log(parameters)
+        console.log(confirmLength)
     };
 
 
