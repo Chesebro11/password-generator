@@ -1,7 +1,7 @@
 // Assignment code here
 // variables:
 var number = '1234567890';
-var special = ['!@#$%^&*<>?/'];
+var special = '!@#$%^&*<>?/';
 var lowerAlpha = 'abcdefghijklmnopqrstuvwxyz';
 var upperAlpha = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
